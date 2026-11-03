@@ -41,3 +41,11 @@ data.grammar.unshift("Nov 3: prioritize meaningful communication and vocabulary 
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
+
+// November 3, 2026 — CI listening evidence, separate from production.
+data.date="November 3, 2026 · CI Miguel/Lea/Paolo recorded · duration unverified";
+data.listening.unshift("Nov 3 CI — Miguel, Lea and Paolo: independently understood unexpected visit, fruit/bread, sibling destination, neighbor borrowing salt, quiet dinner, coffee, breakfast, walk and child playing. Initially missed Paolo's hurried mood and some joke/social meaning; replay needed for reflection on short visit. Explicit English glosses: kumakatok, biro, tumango, magaan. Concrete actions easier than implicit meaning. Learner requested longer stretches; comprehension of longer material not yet established. Fresh standardized sample not administered; exact listening duration/audio-only status unverified. Tutor overchecked and repeatedly tried to stop. Next: fewer checks, coherent longer natural exchanges, adaptive replay and fresh uncoached sample. No production vocabulary advance.");
+data.history.unshift("Nov 3 — Dedicated CI Miguel/Lea/Paolo: concrete actors/actions mostly understood first-pass, social implication/joke and hurried mood required support. Four vocabulary glosses and Tagalog replay/paraphrase. Elapsed listening duration unverified; no clean standardized fresh sample. Production rotation unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
