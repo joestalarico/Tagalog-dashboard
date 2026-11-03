@@ -22,3 +22,12 @@ data.date="November 2, 2026 CI partial";
 data.history.unshift("Nov 2 CI partial: Beach story gist understood; long passage required shorter chunks; nagkaroon explained; bus sample partial. Timing unverified. Production counts unchanged.");
 data.listening.unshift("Nov 2: Beach plot generally followed. Shorter chunks needed; bus sample partial. Duration unverified.");
 q("#date").textContent=data.date;q("#history").innerHTML=lines(data.history);q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 2 production evidence from Living Tracker.
+data.date="November 2, 2026 - Production partial; CI partial";
+data.newWords=[["magdesisyon","decide","1/3 pending completed lesson"],["magdala","bring","1/3 pending completed lesson"]];
+data.carryover=[["kalimutan","forget","2/3 pending"],["mangyari","happen","2/3 pending"],["isipin","think about","3/3 pending"],["tandaan","remember","3/3 pending"]];
+data.queue=[["Next two new items","Choose after verified completed production lesson"]];
+data.grammar.unshift("Nov 2: ko versus ako; ang versus ng; kailangan kong plus root; tandaan versus naaalala");
+data.history.unshift("Nov 2 production partial: Four phases attempted; effective 16 minutes and seven protected dialogue minutes unverified. Independent magdadala, nakalimutan ko, biglang nangyari, gumising and nangyari; two spontaneous questions and connected rest, eating and TV plans. Three recall prompts with mixed independent retrieval and support. Recurring ko/ako, ang/ng, verb complements. Tutor interrupted conversation, misheard nagdesisyon, overcorrected tinandaan and ended prematurely. No production rotation advance. CI unchanged.");
+q("#date").textContent=data.date;q("#history").innerHTML=lines(data.history);q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
