@@ -60,3 +60,11 @@ data.grammar.unshift("Nov 4: ko vs ako after nakalimutan; gusto kong + base verb
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
+
+// November 4 CI — verified learner responses; duration unverified.
+data.date="November 4, 2026 · CI birthday surprise recorded · Duration unverified";
+data.listening.unshift("Nov 4 CI: Independently followed surprise party, changing arrival time, cake flavor mix-up and gift outcome. Nagkataon and halata required English clarification, then recalled. Ben's gift-in-car explanation needed support. Fresh bag sample: identified keys but missed bag relationship. Connected understanding encouraging; details still uneven. Full listening time and audio-only status unverified; learner repeatedly requested continuation after early endings. Next: natural dialogue, fewer interruptions, moderate stretches, uncoached fresh sample. Production rotation unchanged.");
+data.history.unshift("Nov 4 — CI partial/unverified duration: birthday party and follow-ups, Lisa perspective, gift, fresh Daniel/Mia bag sample. Major plot and changing timing understood first pass; nagkataon/halata explained, gift-car cause clarified, final keys recognized but bag relationship missed. No 16-minute or audio-only claim; no production exposure advancement.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
