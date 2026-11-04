@@ -49,3 +49,14 @@ data.history.unshift("Nov 3 — Dedicated CI Miguel/Lea/Paolo: concrete actors/a
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 4, 2026 — production evidence synchronized from Google Living Tracker (partial/unverified).
+data.date="November 4, 2026 · Production four phases reached · Duration unverified";
+data.newWords=[["magdesisyon","decide","1/3 pending completed lesson"],["magdala","bring","1/3 pending completed lesson"]];
+data.carryover=[["kalimutan","forget","2/3 pending"],["mangyari","happen","2/3 pending"],["isipin","think about","3/3 pending"],["tandaan","remember","3/3 pending"]];
+data.queue=[["Next two new items","Activate after verified completed production lesson"]];
+data.history.unshift("Nov 4 — Production, four phases reached; 16 effective minutes and seven independent conversation minutes not verified, so no completed-lesson credit or vocabulary exposure advancement. Independent: Magdadala ako ng pagkain bukas; Hindi naman nangyari; Magpapahinga muna ako; mas gusto kong tahimik na bahay; natural kasi/kaya/pero/muna/pa/naman. Genuine discussion of three work projects, rest, weekend and TV; two requests for English suggested response content, no verified spontaneous learner question. Recall: naghihintay/dumating with kapag vs nang; naantok na/ nanonood pa; nakalimutan ako vs ko and last-year expression unretrieved. Persistent ko/ako, gusto kong + base verb, aspect and marker issues. Tutor overloaded learner with magdala/dalhin and tandaan/maalala variants and excessive coached repetitions; valid nagdesisyon akong magpahinga should not be corrected to completed magpahinga. Next protect genuine TALK and simplify contrasts. CI unchanged.");
+data.grammar.unshift("Nov 4: ko vs ako after nakalimutan; gusto kong + base verb (manood/magpahinga); nang vs kapag for past when; completed vs future; ng/ang; tandaan vs maalala meaning distinction. Avoid overwhelming learner with alternative focus forms.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
