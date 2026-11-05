@@ -91,3 +91,16 @@ q("#grammar").innerHTML=lines(data.grammar);
 // Latest vocabulary policy, Nov 5
 data.grammar.unshift("LATEST: One new word per production lesson; three completed-lesson exposures per word; three focused words maximum. Earlier two-word rule superseded. Preserve historical counts and keep CI separate.");
 q("#grammar").innerHTML=lines(data.grammar);
+
+// Canonical sources and current production policy — Nov 5, 2026
+data.date="November 5, 2026 · One-word production rotation active · Sources synchronized";
+data.newWords=[["Next new item","Selected at next production lesson","1/3 introduction pending; no completed-lesson credit"]];
+data.carryover=[["magdesisyon / magdala","Historical 1/3 positions; optional recycling"],["kalimutan / mangyari","Historical 2/3 positions; optional recycling"],["isipin / tandaan","Historical 3/3 positions; optional recycling"]];
+data.queue=[["Next lesson","Introduce ONE new focused word; up to THREE focused items at steady state"],["Exposure credit","Advance only after verified completed production lessons; preserve all historical counts"]];
+data.grammar=data.grammar.filter(x=>!x.includes("two new useful focused words")&&!x.includes("two new useful focused")&&!x.includes("two-new/six-active")&&!x.includes("VOCABULARY RESUMED:"));
+data.grammar.unshift("CURRENT METHOD: 16-minute production (4 introduce / 3 build / 7 protected situational TALK / 2 recall); one new word per lesson, three completed-lesson exposures, maximum three focused items. CI: 16-minute meaning-first listening rotating coherent stories and practical situational dialogues. Master Reference v3.7 and Curriculum v3.2 are living Google Docs; Living Tracker governs evidence. No lesson credited by this policy change.");
+q("#date").textContent=data.date;
+q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><div class="word">'+e(x[0])+'</div><div>'+e(x[1])+'</div><span class="pill">'+e(x[2])+'</span></div>').join("");
+q("#carry").innerHTML=data.carryover.map(x=>'<div class="item">'+e(x.join(" · "))+'</div>').join("");
+q("#queue").innerHTML=data.queue.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+'</div>').join("");
+q("#grammar").innerHTML=lines(data.grammar);
