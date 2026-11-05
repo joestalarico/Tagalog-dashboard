@@ -68,3 +68,14 @@ data.history.unshift("Nov 4 — CI partial/unverified duration: birthday party a
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 5, 2026 — synchronized from authoritative Living Tracker: production and TALK method.
+data.date="November 5, 2026 · Production practice · Situational TALK method adopted";
+data.newWords=[["magdesisyon","decide","1/3 pending verified completed lesson"],["magdala","bring","1/3 pending verified completed lesson"]];
+data.carryover=[["kalimutan","forget","2/3 pending"],["mangyari","happen","2/3 pending"],["isipin","think about","3/3 pending"],["tandaan","remember","3/3 pending"]];
+data.queue=[["Next two new items","Activate after verified completed production lesson"]];
+data.history.unshift("Nov 5 — Production four phases reached, full effective 16 minutes and protected seven-minute independent TALK unverified; no completed-lesson credit or vocabulary counter advancement. Learner proposed practical rotating situational role-play; restaurant cashier scene: independently asked about recommendations, sides, drinks, payment, prices, wait time, desserts and latte; negotiated non-spicy chicken, card payment and substitutions. Occasional English support and corrections; tutor repeatedly paused and broke character despite learner requests to continue. Recall: TV/phone/answer needed sumagot; keys remembered at last minute; sleep/noise needed nagising kami dahil sa ingay. Production grammar ko/ako, aspects, object marking and complement forms remain active. CI unchanged.");
+data.grammar.unshift("Nov 5 TALK METHOD: default rotating real-life situational role-plays (restaurant, hotel, transit, shopping, family, appointments), not generic day check-ins. Tutor stays in character, responds to learner-initiated questions/requests/choices, avoids mid-scene grading and unnecessary pauses. Mostly familiar Tagalog, occasional realistic complications, English help when needed. Protect seven actual conversation minutes, record support/timing honestly. Preserve 4/3/7/2 and CI separation.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
