@@ -104,3 +104,11 @@ q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><div class="word">'+
 q("#carry").innerHTML=data.carryover.map(x=>'<div class="item">'+e(x.join(" · "))+'</div>').join("");
 q("#queue").innerHTML=data.queue.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+'</div>').join("");
 q("#grammar").innerHTML=lines(data.grammar);
+
+// November 5 situational CI evidence — authoritative Living Tracker synchronized.
+data.date="November 5, 2026 · Situational CI hotel/travel · Effective duration unverified";
+data.listening.unshift("Nov 5 situational CI: Daniel/Mia hotel, restaurant, family call, Marco meetup, taxi, breakfast, rain and borrowed/missing umbrella. First-pass understanding strong for practical goals, hotel delay, water, keys, meetup time, taxi, weather and umbrella. Initially missed Daniel forgetting prior plans; recovered after clarification. 'Already ate' misheard as wanting to eat; five-minute rest as leaving. Pasilyo/madulas glossed; repeats and clearer speaker pacing requested. Final missing umbrella recognized, rain stopping not mentioned. Learner reported ~11 minutes before further scenes; exact effective 16 minutes, audio-only status, and clean uncoached fresh sample unverified. Tutor repeatedly tried to end early and overchecked. Next: paced distinct speakers, longer connected stretches, fewer interruptions, independent fresh sample. Production counters unchanged.");
+data.history.unshift("Nov 5 — Dedicated situational CI hotel/travel: multiple connected scenes through missing borrowed umbrella. Strong practical gist and intentions; aspect, timing and causal details sometimes missed; repetition/English glosses supported comprehension. Learner requested better pacing and repeatedly requested continuation. Full 16 effective minutes not verified; no production credit.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
