@@ -87,3 +87,7 @@ q("#grammar").innerHTML=lines(data.grammar);
 // Nov 5 — User unpaused new focused production vocabulary; historical counts unchanged.
 data.grammar.unshift("Nov 5 VOCABULARY RESUMED: user authorizes two new useful focused words at the next production lesson. Keep 3-completed-lesson rotation and historical counts; magdesisyon/magdala 1/3, kalimutan/mangyari 2/3, isipin/tandaan 3/3 remain recorded pending verified completion. Introduce a new pair next lesson, recycle existing words; only verified completed lessons earn exposure credit. Grammar mastery does not gate rotation; CI remains separate.");
 q("#grammar").innerHTML=lines(data.grammar);
+
+// Latest vocabulary policy, Nov 5
+data.grammar.unshift("LATEST: One new word per production lesson; three completed-lesson exposures per word; three focused words maximum. Earlier two-word rule superseded. Preserve historical counts and keep CI separate.");
+q("#grammar").innerHTML=lines(data.grammar);
