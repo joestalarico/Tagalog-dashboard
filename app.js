@@ -112,3 +112,11 @@ data.history.unshift("Nov 5 — Dedicated situational CI hotel/travel: multiple 
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// Nov 5 CI learner clarification supersedes two previously scored misses.
+data.date="November 5, 2026 · CI assessment corrected";
+data.listening.unshift("Nov 5 CI correction: learner understood Daniel forgetting prior meeting and kumain na kami = already ate. Delayed/ambiguous tutor question, not a demonstrated comprehension failure. Confirmed misunderstanding: five-minute rest interpreted as leaving in five minutes. Earlier entry remains as original observation but these two deficit interpretations are superseded. Distinguish comprehension from delayed recall and question ambiguity; pacing and support needs remain. Timing unverified; production unchanged.");
+data.history.unshift("Nov 5 CI assessment correction: learner clarified meeting-forgetting and already-ate were understood. Only five-minute rest was self-confirmed misunderstanding. Prior scoring overstated gaps; no new completion credit.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
