@@ -22,3 +22,11 @@ After every production or CI tutoring session, without waiting for a reminder:
 7. Tell the learner succinctly what was verified and any pending/failed step. Never claim automatic background synchronization or fabricated completion.
 
 This checklist is an instruction for the tutor during future lessons, **not** an automated scheduled sync or an automatic deployment monitor. If connector access is unavailable, the tutor must disclose that and not claim a successful sync.
+
+## Canonical teaching documents (November 5, 2026)
+
+- [Master Reference v3.7](https://docs.google.com/document/d/1MOyRVMFn72GXBAuu1O3LfTILDmimF82Uk784x8j-etE/edit): teaching method, production 4/3/7/2 and situational TALK, dedicated CI stories and situational listening.
+- [Curriculum v3.2](https://docs.google.com/document/d/1k0o_Lp2paVL9NcIcC1HdOA5KCWb5WRkbl54yqpbmNEg/edit): long-term goals.
+- [Living Tracker](https://docs.google.com/document/d/1RnLLGNy0IkP1udkCTiyYwQSprwTPfui4K0eIxFzD63g/edit): authoritative progress, completed-lesson counts, historical performance.
+
+Current production rotation: **ONE** new focused word per production lesson, **three consecutive verified completed-lesson exposures**, maximum **THREE** focused words at steady state. Preserve historical exposure positions and do not grant completion credit for unverified sessions. Older two-word/six-item and paused wording in archived history is historical, not current policy. GitHub Pages is a manually maintained read-only mirror, not an automatic sync.
