@@ -120,3 +120,11 @@ data.history.unshift("Nov 5 CI assessment correction: learner clarified meeting-
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 6, 2026 — CI listening evidence; Living Tracker verified.
+data.date="November 6, 2026 · Mixed CI listening · Effective duration unverified";
+data.listening.unshift("Nov 6 mixed situational/narrative CI: independently followed restaurant waiting/window/menu, bus departure and change, jeep stop, five-minute agreements, and online class starting. Beach scene: Carla's motive for helping and rain backup not independently established. Pharmacy: syrup preference understood; advice to return tomorrow misread as repeat medication. Office: report deadline recognized, but Anna's needed information as turning point missed. Umabot explained in English; mag-umpisa explained then recognized in fresh context. Visible transcript; audio-only and exact 16 effective minutes unverified; no clean independent fresh sample. Repeated premature stopping, overchecking and fragmented scenarios were tutor delivery errors. Next: coherent novel scenario, longer natural stretches, fewer checks, causality and intent, meaningful revisit and uncoached sample. No production credit.");
+data.history.unshift("Nov 6 — Dedicated mixed CI (effective duration unverified): practical dialogue gist often independently correct; causes, conditions and connected motives less secure. Support for umabot and mag-umpisa; latter recognized in fresh example. Learner repeatedly asked to continue, objected to repetitive lost-item plots and premature endings. No verified full 16-minute completion or audio-only testing. Production exposure counts unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
