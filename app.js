@@ -128,3 +128,18 @@ data.history.unshift("Nov 6 — Dedicated mixed CI (effective duration unverifie
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+
+// November 6 production practice — synchronized from verified Living Tracker.
+data.date="November 6, 2026 · Production practice · Effective duration unverified";
+data.newWords=[["subukan","try / attempt","Introduced Nov 6; 1/3 credit pending verified completed lesson"]];
+data.carryover=[["magdesisyon / magdala","decide / bring","Historical focus; counts unchanged"],["kalimutan / mangyari","forget / happen","Historical focus; counts unchanged"],["isipin / tandaan","think / remember","Historical focus; counts unchanged"]];
+data.queue=[["Next production","Introduce exactly ONE new focused word; recycle subukan and older vocabulary naturally; preserve historical exposure counts"]];
+data.grammar.unshift("Nov 6 production: subukan with ko (not ako); verb complement tawagan/tumawag; aspect of sinubukan/susubukan; natural independent questions and conversational repairs. Tinandaan ko is valid completed form; nagdala ako kanina was acceptable.");
+data.history.unshift("Nov 6 — Production practice, four phases attempted, 16 effective minutes and 7 independent TALK minutes NOT verified (learner reported only 11 minutes at premature ending). New subukan introduced; initial ko/ako and aspect issues improved after modeled support, not automatic. Independently asked about friend's work, restaurant name, prices, and chose sinigang; corrected tutor misunderstanding. Older magdesisyon, kalimutan, nangyari, tandaan retrieved with mixed support. Tutor overcorrected valid nagdala and tinandaan, introduced unscaffolded dinala/dala, and prematurely declared completion. No completed-lesson exposure credit; CI unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
+q("#new-words").innerHTML=lines(data.newWords.map(x=>x.join(" — ")));
+q("#carryover").innerHTML=lines(data.carryover.map(x=>x.join(" — ")));
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
