@@ -140,6 +140,6 @@ data.history.unshift("Nov 6 — Production practice, four phases attempted, 16 e
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
-q("#new-words").innerHTML=lines(data.newWords.map(x=>x.join(" — ")));
-q("#carryover").innerHTML=lines(data.carryover.map(x=>x.join(" — ")));
+q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
