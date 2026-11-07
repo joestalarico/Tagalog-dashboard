@@ -143,3 +143,12 @@ q("#grammar").innerHTML=lines(data.grammar);
 q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+
+// November 7, 2026 — verified Living Tracker CI entry; no production exposure change.
+data.date="November 7, 2026 · Situational CI · Effective 16 minutes unverified";
+data.listening.unshift("Nov 7 situational CI: independently understood larger same-price car choice due to tired child, hotel room ready, no hot soup, water/snacks, driver notifying stop, taking care in heat, receptionist providing pen after correction, and bus/tricycle/museum practical gist with vocabulary support. Supported vocabulary: hintuan, hanap, saging, bilisan, lubak, hakbang, lilim, umiwas. Some answers were partial, leading or corrected; no clean uncoached sample. Opening replay and English glosses; transcript visible, audio-only and 16 effective minutes unverified. Tutor repeatedly cut off listening and overchecked despite requests to continue. Next: sustained connected input, fewer interruptions, honor remaining time. Production counters unchanged.");
+data.history.unshift("Nov 7 — Dedicated CI situational listening (effective 16 minutes unverified): airport rental, hotel, breakfast, relatives, bus, clinic, market, tricycle and museum. Strong practical gist, details and vocabulary often supported. Tutor fragmented scenarios, overchecked and repeatedly ended early despite learner requests. No verified clean uncoached sample or audio-only comprehension; production rotation unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
