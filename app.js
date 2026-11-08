@@ -167,3 +167,12 @@ q("#grammar").innerHTML=lines(data.grammar);
 q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+
+// November 8, 2026 — Dedicated CI narrative; synced from verified Living Tracker.
+data.date="November 8, 2026 · Narrative CI Marco/Ben · Effective duration unverified";
+data.listening.unshift("Nov 8 CI narrative Marco/Ben: beach meeting delayed by Ben's family/housework, later dinner due to late hour/rain; Ben checked price and accepted restaurant. Initial full replay needed. Learner missed initial motivation, attributed delay to Marco's son, and later misread restaurant as too expensive; corrected with English explanation. Independently understood rain/dinner outcome, beach original plan, weekend enjoyment, long coffee queue, seeing Ben, housework first, help coworker after own work. 'Magaan' explained in English. 'Already drank coffee' initially confused with earlier long line; 'next week' inferred though not said; 'unti-unti lang' only partly understood. Some questions leading/overaffirmed. Repeated tutor premature stopping and fragmented short samples despite user saying five minutes remained. Visible transcript; audio-only, effective 16 minutes and clean late uncoached sample unverified. Production counters unchanged.");
+data.history.unshift("Nov 8 — Dedicated CI narrative (effective duration unverified): Marco/Ben changed beach plans to restaurant, followed by work/home scenes. Good event gist after support; causes, timing and speaker intention less reliable first-pass. Magaan glossed; coffee already-drank misunderstood. Tutor repeatedly interrupted and ended prematurely despite requests to continue. No verified 16-minute completion or audio-only test; production rotation unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
