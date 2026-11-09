@@ -176,3 +176,18 @@ data.history.unshift("Nov 8 — Dedicated CI narrative (effective duration unver
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+
+// November 8, 2026 — production practice mirrored after Tracker readback.
+data.date="November 8, 2026 · Production practice · Four phases attempted · Effective duration unverified";
+data.newWords=[["humingi","ask for / request","Introduced Nov 8; 1/3 credit pending verified completed lesson"]];
+data.carryover=[["ayusin","fix / arrange","Introduced Nov 7; first completed exposure pending"],["subukan","try / attempt","Introduced Nov 6; first completed exposure pending"]];
+data.queue=[["Next production","Introduce ONE new focused word; recycle humingi and natural na/pa/naman; preserve all completed-lesson exposure counts"]];
+data.grammar.unshift("Nov 8 production: learner chose pa naturally in titingin pa ako ng iba; requested pragmatic explanations of when na/pa/naman fit context rather than literal English triggers. Contrast actor nag-ayos kami ng problema vs object inayos namin ang problema by discourse context. Focus pairs kami/namin, siya/niya, ako/ko, and ang/ng remain active. Tutor-added optional pa/na were wrongly presented as corrections; valid hindi pa kami nagdesisyon was wrongly altered to ongoing.");
+data.history.unshift("Nov 8 — Production INTRODUCE/BUILD/TALK/RECALL attempted; 16 effective minutes and protected 7 minutes TALK not verified due to extensive English grammar coaching, pauses and role-play restarts. NEW humingi (humingi/humihingi/hihingi) introduced; learner correctly used hihingi ako ng tulong and humihingi kami, while subukan + ayusin compound needed sinusubukan kong ayusin. Realistic toy-store scene: learner requested toys, asked to see another piece, said age three, preferred puzzles, self-repaired titingin pa ako ng iba, used hindi pa appropriately. Laruan vs larawan, naghahanap, actor/object-focus verb + pronoun/ang-ng pairing needed support. Asked sustained detailed questions about why natural speakers use na/pa/naman, and correct kami/namin choice; examples ultimately clarified discourse context. RECALL sinubukan kami and hindi pa nagdesisyon; tutor correction corrected later to sinubukan namin iyon and hindi pa kami nagdesisyon. Request for next lesson: BOTH humingi and conversational particles retrieval. No completed production exposure advances, CI untouched.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
+q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
