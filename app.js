@@ -191,3 +191,18 @@ q("#grammar").innerHTML=lines(data.grammar);
 q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+
+// November 9, 2026 — production practice mirrored after verified Living Tracker update.
+data.date="November 9, 2026 · Production practice · Four phases attempted · Effective duration unverified";
+data.newWords=[["magpaliwanag","explain","Introduced Nov 9; 1/3 credit pending verified completed lesson"]];
+data.carryover=[["humingi","request","Introduced Nov 8; completion credit pending"],["ayusin","fix / arrange","Introduced Nov 7; completion credit pending"],["subukan","try / attempt","Introduced Nov 6; completion credit pending"]];
+data.queue=[["Next production","Introduce ONE new focused item; recycle magpaliwanag, humingi and natural na/pa/naman; no unverified exposure advancement"]];
+data.grammar.unshift("Nov 9 production: spontaneous reservation questions and decisions improved, but question markers (anong ang, ilan tao), actor/object pronouns (namin/naming, ako/ko), verb aspects, negative pa and nahanap/hahanapin and naalala retrieval need independent practice. Some teacher corrections were misleading: 'Hindi pa ako nagpapaliwanag kahapon' was affirmed though past negation needs 'Hindi ako nagpaliwanag kahapon'; 'Hindi pa kami nagdesisyon' is valid for not yet decided; coached 'muntik namin makalimutan' should be 'muntik naming makalimutan'.");
+data.history.unshift("Nov 9 — Production INTRODUCE/BUILD/TALK/RECALL attempted; effective 16 minutes and protected 7 minutes TALK unverified, no completed exposure credit. NEW magpaliwanag (nagpaliwanag/nagpapaliwanag/magpapaliwanag) replaced mag-alok; independently produced accurate kahapon/ngayon aspect contrast and nagpaliwanag na ako. BUILD humingi + sinubukan naming ayusin and hindi pa kami nagdesisyon needed coaching. TALK community-center hall booking: learner initiated reservation, 4 PM time, room options, capacity, 4–6 PM confirmation, bathroom/restaurant directions, hall price, and card payment; meaningful self-directed conversational turns despite marker, pronoun and word errors (taon for tao). RECALL nahanap/hahanapin and muntik naming makalimutan/naalala needed explicit models; repeated forms are coached, not independent mastery. Tutor repeatedly paused and overaffirmed imperfect sentences. Carryover humingi, ayusin, subukan; CI unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
+q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
