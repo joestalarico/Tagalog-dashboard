@@ -214,3 +214,11 @@ data.history.unshift("Nov 9 — Dedicated CI listening, partial/unverified effec
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 10, 2026 — dedicated CI listening; mirrored from verified Living Tracker.
+data.date="November 10, 2026 · CI birthday-gift narrative · Effective duration unverified";
+data.listening.unshift("Nov 10 dedicated CI: coherent Maya/Daniel/Nico/Sofia birthday-gift story. Independent comprehension: family wanted to leave early, Sofia already had gift, Nico promised to ask before opening, Maya thanked him for honesty. Missed 'Mukhang maayos na' (answered important), Sofia's plan to give duplicate to sibling (answered she wants it), and Nico's intention to choose a gift recipient doesn't own (answered Daniel's reminder not to open early). English glosses requested for tumango, halatang, papagalitan, balutin/balutan, lumapit, palitan. Learner requested replay and shorter sections; closing self-reported clear, not an independent comprehension result. Tutor over-questioned and prematurely claimed completion and updates. Learner said only 10 minutes elapsed; exact effective CI time and full 16 minutes unverified, transcript visible, audio-only unverified. No production counters changed.");
+data.history.unshift("Nov 10 — Dedicated CI birthday gift narrative with Maya, Daniel, Nico, Sofia; partial/unverified 16-minute effective duration. Independently caught leaving early, duplicate gift, Nico asking before opening, truthfulness; specific intent/recipient details sometimes missed. Replayed opening and English glosses for tumango, halatang, papagalitan, balutin/balutan, lumapit, palitan. Requested smaller chunks. Tutor repeatedly tested, prematurely announced final/16-minute completion, and claimed an update before actually performing one. Transcript available; no audio-only claim. Next use short natural connected scenes, fewer checks, meaningful revisit, genuine late fresh sample. Production counters unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
