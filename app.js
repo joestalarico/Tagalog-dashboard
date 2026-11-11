@@ -222,3 +222,17 @@ data.history.unshift("Nov 10 — Dedicated CI birthday gift narrative with Maya,
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 11, 2026 — mirrored from verified authoritative Living Tracker; no unverified completed-lesson credit.
+data.date="November 11, 2026 · Production practice · Effective duration unverified";
+data.newWords=[["magpalit","change / switch / exchange","Introduced Nov 11 · 1/3 completed-lesson credit pending"]];
+data.carryover=[["makasama","be able to join","Introduced Nov 10 · credit pending"],["magpaliwanag","explain","Introduced Nov 9 · credit pending"],["humingi","request","Introduced Nov 8 · credit pending"]];
+data.queue=[["Next production","Introduce exactly ONE new focused item; recycle magpalit, makasama and magpaliwanag"],["Potential future replacements","magbalik (return) and another genuinely new useful item, selected at next preparation"],["Exposure rule","No advancement without verified completed 4/3/7/2 production lesson"]];
+data.grammar.unshift("Nov 11 production: main target is actor/object focus with pronoun and marker pairing (kami/namin, ako/ko, ang/ng); first-pass 'halos nakilimutan kami ang bag' conveyed meaning but needs verb form, naming and completed naalala. Halos was a valid near-miss attempt; do not require muntik or penalize familiar vocabulary. Verb aspects nagpalit/magpapalit improved after feedback; spontaneous store questions/decisions sustained.");
+data.history.unshift("Nov 11 — Production INTRODUCE/BUILD/TALK/RECALL attempted; 16 effective minutes and 7 protected TALK minutes unverified, no completed-lesson exposure credit. New magpalit (nagpalit/nagpapalit/magpapalit) introduced, 1/3 pending; makasama, magpaliwanag, humingi carryovers pending. After correction produced 'Nagpalit ako ng damit kanina, pero magpapalit ako ulit mamaya'; BUILD makasama and nagpapalit pa coached. Extended clothing-store TALK: independently requested medium/large, time, other color, chose gray and two items, card, hats/bracelet, initiated discounts and bag request; learner corrected tutor's premature stops and English intrusion. RECALL first-pass 'Halos nakilimutan kami ang bag, pero naaalala ko yun bago umalis' needed naming, correct verb, completed naalala; clarified halos vs muntik, independently chose halos for nearly finished eating. Prioritize pronoun-focus pairings and ng/ang. No CI change.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
+q("#new").innerHTML=data.newWords.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#carry").innerHTML=data.carryover.map(x=>'<div class="item"><strong>'+e(x[0])+'</strong> — '+e(x[1])+' · '+e(x[2])+'</div>').join("");
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
