@@ -254,3 +254,13 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+// November 12, 2026 — temporary grammar consolidation method (Master Reference + Tracker synced).
+data.date="November 12, 2026 · Grammar consolidation active · Vocabulary rotation paused";
+data.grammar.unshift("ACTIVE TEMPORARY GRAMMAR CONSOLIDATION: 16-min 4/3/7/2 preserved. INTRODUCE 4m = one familiar grammar micro-pattern, zero new words; BUILD 3m = varied first-pass prompts + fresh transfer; TALK 7m = uninterrupted natural Tagalog role-play with learner-led choices and no line-by-line corrections; RECALL 2m = uncoached pattern + older-word check. Priorities: ako/ko and kami/namin → ang/ng → verb aspects → particles, with natural overlap. Track independent first-pass accuracy, support, spontaneous TALK and repairs; do not count coached repeats as independent. No new focused words or exposure advancement until learner explicitly resumes. No CI changes.");
+data.queue=[["Current mode","TEMPORARY grammar consolidation; focused production vocabulary rotation paused at learner request"],["Next grammar micro-pattern","Actor-focus ako/kami versus object-focus ko/namin using familiar verbs; no forced sentence conversions"],["Next targets","ang/ng; aspect contrasts; particles/linkers, guided by observed independent errors"],["Completion","Keep 4/3/7/2, seven-minute TALK protected; if timing unverified do not claim completion or force early transition"],["Vocabulary counts","Frozen during pause; preserve historical encounters, including magbalik Nov 12"]];
+data.history.unshift("Nov 12 — Method update, NOT a lesson: learner requested restructuring to address persistent grammar errors and overload. Master Reference v3.7 and Living Tracker updated with temporary explicit grammar-consolidation exception: 4m one familiar grammar pattern; 3m mixed independent construction; 7m protected natural TALK; 2m uncoached RECALL. Start ako/ko and kami/namin; later ang/ng, aspects, particles. Zero new focused words and zero exposure advancement until learner explicitly resumes. CI and curriculum goals unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
