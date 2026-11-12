@@ -244,3 +244,13 @@ data.history.unshift("Nov 11 — Dedicated CI cinema and hotel/restaurant listen
 q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+
+// November 12, 2026 — authoritative Tracker mirror; learner-requested focused vocabulary pause.
+data.date="November 12, 2026 · Production practice · Rotation paused · Timing unverified";
+data.queue=[["Vocabulary rotation","PAUSED at learner request: no new focused words, replacements or exposure-count advancement until learner agrees"],["Recent encounter","magbalik introduced before pause Nov 12, encounter only, no completed credit"],["Next production","Familiar verbs only; mixed aspects and short focus/marker practice; protect seven-minute TALK"]];
+data.grammar.unshift("Nov 12: learner perceives worsening fluency amid recent vocabulary overload. First-pass kami/namin, ako/ko, ang/ng, linking kung bakit and aspect still inconsistent. Coached repeats are not independent evidence. Valid halos must not be marked wrong; avoid forcing unfamiliar muntik. Focus on automatic familiar constructions, preserve extended spontaneous dialogue.");
+data.history.unshift("Nov 12 — Production 4 phases attempted, effective 16-minute timing and protected 7-minute TALK unverified, no completed-lesson exposure credit. Learner explicitly PAUSED new vocabulary rotation (six recent + six older words feel overloaded). magbalik introduced at opening before pause; encounter only. BUILD: self-repaired nagpalit kami ng damit; naghihintay pa kami and nagpaliwanag ako kung bakit coached. Extended beach/rain/store/restaurant planning TALK: independently initiated plans, guest question, drinks, chairs, food, weather adjustments and meeting time; tutor repeatedly interrupted and attempted early endings; learner corrected timing and directed transition to recall. RECALL: first-pass halos nakalimutan tayo ang susukli / tinandaan ko; needed susi, namin/naming, completed naalala, bago kami umalis; tutor improperly rejected halos and mislabeled coached repetition independent. Future magpapaliwanag independently retrieved but 'magpapaliwanag ko' needs ako. Final extra recall question unanswered. User feels less fluent; no verified comparable measurement proves regression. Preserve CI and all counts; reduce forced repetitions, prioritize sustained TALK and small familiar focus/marker contrasts.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
