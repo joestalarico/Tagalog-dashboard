@@ -264,3 +264,11 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+// November 12, 2026 — CI listening mirror, verified against Living Tracker.
+data.date="November 12, 2026 · CI listening · Effective duration unverified";
+data.listening.unshift("Nov 12 dedicated CI: Lola Rosa birthday surprise (Carlo/Mia/Lucas/Ana), then Nina's missed-bus story (Bea/Mark/wrong-route bus). Learner initially understood gift search but incorrectly placed gift in car; after clarification accurately said Ana gave Carlo the gift before party. Independently identified Lucas made Lola a card. Requested full replay and smaller chunks, then explicitly chose 8–10 sentences per spoken stretch. English support for sumigaw, yakapin, mahigpit, yakap, ipinikit, kanyang, hiniling; Tagalog revisit supported, retention unverified. Nina story stopped at wrong-route bus, no independent comprehension check of it. Tutor sometimes overexplained, exceeded requested chunk length, and interrupted. Effective 16 CI minutes, strict audio-only comprehension and final fresh independent sample unverified; partial session. No production counter changes. Next: 8–10 sentence chunks, one coherent arc, few checks and no premature ending.");
+data.history.unshift("Nov 12 — Dedicated CI birthday narrative and Nina bus story, partial/unverified effective listening time. First-pass gift location misunderstood (said car; was Ana's house); after correction identified Ana gave gift before party; independently recognized Lucas made Lola a card. Requested full repeat, then 8–10-sentence chunks after initially asking for shorter sections. Asked glosses for sumigaw, yakapin, mahigpit, yakap, ipinikit, kanyang, hiniling. Nina story ended at wrong-route bus with no uncoached gist sample. Transcript visible; 16 effective minutes and audio-only unverified. Production grammar pause/counters unchanged.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
