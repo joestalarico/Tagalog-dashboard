@@ -298,3 +298,9 @@ data.grammar.unshift("NOV 14 TRANSCRIPTION CORRECTION: Learner reports last coup
 data.history.unshift("Nov 14 — Post-sync evidence correction: learner explicitly disputes accuracy of voice transcript for the final couple of production practice sentences and reports saying them correctly. Earlier dashboard treated transcript strings as confirmed spoken grammar errors. The final couple are now classified TRANSCRIPTION-UNCERTAIN, not confirmed mistakes or verified successes; cannot independently reconstruct audio. All vocabulary exposure counters, grammar-consolidation mode, and CI data remain unchanged.");
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
+
+// November 14, 2026 — final learner-confirmed correction; supersedes transcription-uncertain label.
+data.grammar.unshift("NOV 14 FINAL CORRECTION: Learner unequivocally confirms BOTH final spoken practice answers ('Our child will bring the toy later' and 'We're bringing the water now') were correct and speech recognition mis-transcribed them. Record both as CORRECT BY LEARNER FIRSTHAND CONFIRMATION; NOT errors, NOT unresolved/uncertain. Do not invent the exact original audio wording or claim independent audio verification. The water transcript 'Nagdadala kami ng tubig ngayon' is valid actor focus. Supersedes prior Nov 14 uncertainty and error labels for those two.");
+data.history.unshift("Nov 14 — Final correction to voice transcription: learner explicitly confirmed both final spoken answers were CORRECT. Previous dashboard classified them as transcript errors, then uncertain; BOTH labels superseded. Treat as learner-confirmed correct speech, with inaccurate automatic transcript, not independently audio-verified wording. No vocabulary or CI counter changes.");
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
