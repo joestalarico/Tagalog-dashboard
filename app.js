@@ -292,3 +292,9 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+// November 14, 2026 — learner correction to voice transcription assessment.
+data.grammar.unshift("NOV 14 TRANSCRIPTION CORRECTION: Learner reports last couple of spoken practice responses were correct but voice recognition transcribed them inaccurately. Reclassify the final attempts, including the apparent 'Anak namin dadalhin ang laruan mamaya' word-order error, as AUDIO-TRANSCRIPTION UNCERTAIN, not verified grammar mistakes. Exact spoken wording cannot be independently confirmed; do not award verified correct credit either. 'Nagdadala kami ng tubig ngayon' is a valid actor-focus answer. Distinguish ASR errors from actual learner grammar errors; never calculate accuracy from unverified transcripts.");
+data.history.unshift("Nov 14 — Post-sync evidence correction: learner explicitly disputes accuracy of voice transcript for the final couple of production practice sentences and reports saying them correctly. Earlier dashboard treated transcript strings as confirmed spoken grammar errors. The final couple are now classified TRANSCRIPTION-UNCERTAIN, not confirmed mistakes or verified successes; cannot independently reconstruct audio. All vocabulary exposure counters, grammar-consolidation mode, and CI data remain unchanged.");
+q("#history").innerHTML=lines(data.history);
+q("#grammar").innerHTML=lines(data.grammar);
