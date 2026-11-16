@@ -338,3 +338,12 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+
+// November 16, 2026 — dedicated CI listening, partial; authoritative Living Tracker mirror.
+data.date="November 16, 2026 · CI listening partial · Effective duration unverified";
+data.listening.unshift("Nov 16 CI PARTIAL: Neighbor dinner and shopping, Liza's lost blue bag at park, then Liza's perspective revisit. Independent: correctly understood Sunday park plan changed because family had to visit Lola. Tentative early-door-arrival gist ('maybe their neighbor'); other questions answered by tutor, not learner. Fresh ice-cream sample presented but unanswered after learner paused. Parenthetical English glosses in visible transcript; no independent audio-only sample or verified 16-minute effective listening. Learner objected to ~2.5-minute uninterrupted story segment; next use ~30–60-second coherent stretches and light natural check-ins, not repeated quizzes. No production vocabulary exposure changes.");
+data.history.unshift("Nov 16 — CI PARTIAL, 16 effective minutes unverified: Mara/Ben/Nico host Liza/Carlo; Carlo avoids meat, family prepares pasta, guests arrive early; Sunday park plan conflicts with Lola visit. Later Mara finds Liza's lost bag at park office; Liza confirms contents to retrieve it. Liza's viewpoint revisits forgotten bag and friends meet at park. Correct independent meaning: Sunday changed because they had to go to Lola. Tentative arrival gist: neighbor at door; exact early arrival clarified. Dinner-plan and bag-office questions were answered by tutor, not independent. Fresh ice-cream sample unanswered due to pause. User requested initial replay and selective parenthetical English glosses in visible text (spoken Tagalog only). Tutor overextended to ~2.5-minute continuous passage; learner requested earlier check-ins. Next: ~30–60-second connected stretches with occasional natural checks, avoid quiz-per-stretch; no completed timed CI credit, no audio-only claim, production counters frozen.");
+q("#date").textContent=data.date;
+q("#history").innerHTML=lines(data.history);
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
