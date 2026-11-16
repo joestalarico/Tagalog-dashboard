@@ -322,3 +322,9 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+// Nov 15 learner-directed teaching priority update (not a lesson or exposure).
+data.history.unshift("Nov 15 — LEARNER PREFERENCE UPDATE (not a lesson): Stop using dala/'to bring' as primary grammar drill. Rotate familiar hanap, kuha, kain, bili and other previously learned verbs in natural contexts. Keep grammar consolidation, zero new focused vocabulary and frozen exposure counts. Dala incidental only. Overrides prior next-lesson dala recommendation.");
+data.queue=[["Current mode","Grammar consolidation; ZERO new focused vocabulary; exposure counts frozen"],["Next lesson verbs","NO dala/to bring as primary drill; use familiar hanap, kuha, kain, bili and other established verbs"],["Grammar target","Actor/object focus, ako/ko/kami/namin, ang/ng including noun agents, mixed completed/ongoing/future"],["Method","Varied meaningful first attempts; no repetitive sentence conversions; ASR errors not presumed spoken errors"],["TALK","Protect seven actual minutes of reciprocal role-play; do not end early"]];
+q("#history").innerHTML=lines(data.history);
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
