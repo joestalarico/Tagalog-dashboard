@@ -358,3 +358,7 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+// Nov 17, 2026 — CI method preference only; not a completed lesson.
+data.listening.unshift("Nov 17 CI METHOD UPDATE (not a lesson): prioritize ordinary high-frequency conversations about meals, work, home, family, childcare, restaurants, shopping and daily plans; avoid contrived rain, lost objects and constant surprise plot turns. Recycle natural functional phrases across varied contexts for receptive automaticity and possible transfer to production. Preserve meaning-first listening, ~30–60-second coherent stretches, occasional light checks, selective written-only English glosses, meaningful revisit and fresh independent sample. No performance, timing or vocabulary exposure credit.");
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
