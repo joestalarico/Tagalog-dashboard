@@ -370,3 +370,11 @@ data.history.unshift("Nov 17 CI — natural household and family conversation li
 q("#date").textContent=data.date;
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
 q("#history").innerHTML=lines(data.history);
+
+// November 18, 2026 — dedicated CI listening evidence, duration unverified.
+data.date="November 18, 2026 · CI natural conversations · Effective duration unverified";
+data.listening.unshift("Nov 18 CI PARTIAL (untimed): realistic family gathering, grocery call, coworker check-in, dinner. Learner independently recognized wife waiting, hintay/mamaya/sabay, rest after work, Lola's sweet snack, careful driving, toyo/sabon (soap meaning clarified), walking, feeling lighter, rest after work, water on table and earlier bedtime. Incomplete/inaccurate: motivation for practicing Tagalog ('for his child' vs easier in real conversation); answer 'later' instead of short walk. Full initial family dialogue replayed on request; visible transcript/glosses, not validated audio-only. Too many questions and premature pauses despite preference for ~one-minute natural stretches. No verified 16 minutes or production exposure credit.");
+data.history.unshift("Nov 18 CI — family/social, errands, work and dinner listening; partial/untimed. Mostly accurate meaning checks, two incomplete/inaccurate responses, one vocabulary clarification (sabon = soap), replay and text support. No verified audio-only sample or full 16-minute completion.");
+q("#date").textContent=data.date;
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+q("#history").innerHTML=lines(data.history);
