@@ -400,3 +400,12 @@ q("#date").textContent=data.date;
 q("#history").innerHTML=lines(data.history);
 q("#grammar").innerHTML=lines(data.grammar);
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+
+
+// November 19, 2026 — dedicated CI high-frequency review preference; verified Living Tracker entry.
+data.date="November 19, 2026 · CI high-frequency conversations · Partial, effective duration unverified";
+data.listening.unshift("Nov 19 CI — everyday family, childcare, errands, work, meals and relatives. Independent answers: milk and fruit correct; children's bedtime gist correct. Learner requested explanations of maayos naman, pinakamadaling sundan, pag versus pa, and kapag versus pag. Transcript/glosses available; no verified independent audio-only sample, 12-minute milestone, or full 16-minute effective listening. NEW METHOD: after EVERY coherent 30–60-second Tagalog dialogue passage, briefly review 3–6 high-frequency expressions heard with contextual English meanings; avoid quizzes and repeated premature endings. Keep pag/kapag, pag-uwi/pagdating and pagkatapos distinctions accurate. Production vocabulary counters frozen.");
+data.history.unshift("Nov 19 — CI partial/untimed: natural high-frequency family breakfast, daycare, grocery, work, dinner, relatives, park and bedtime conversations. First-pass correct: milk and fruit; bedtime gist. Clarification requests: maayos naman, pinakamadaling sundan/pinakasundan, pag (not pa), and whether kapag is valid. Visible transcript and selective English glosses available; audio-only sample and 12/16 effective minutes NOT verified. Learner specifically requested a short review of high-frequency expressions with English meanings after EACH listening passage, without breaking natural immersion. No CI mastery or production exposure credit.");
+q("#date").textContent=data.date;
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+q("#history").innerHTML=lines(data.history);
