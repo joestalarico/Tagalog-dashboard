@@ -423,3 +423,12 @@ q("#carry").innerHTML=lines(["Focused vocabulary paused — all historical expos
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
 q("#grammar").innerHTML=lines(data.grammar);
 q("#history").innerHTML=lines(data.history);
+
+
+// November 20, 2026 — CI session verified in Google Living Tracker.
+data.date="November 20, 2026 · CI high-frequency listening · Effective duration unverified";
+data.listening.unshift("Nov 20 CI — everyday family, park, meals, work, childcare, shopping and coffee conversations. Correct independent meaning checks: Sunday invitation for Lola and Carlo still working on report. Correct call-Lola answer only after replay. Slower pace requested; short English reviews of na/pa/muna/naman/lang, kapag, maayos naman, tapos na, meron pa, paalis/papunta. Transcript/gloss-supported; audio-only and full 16 minutes unverified. Tutor over-interrupted. Keep slow coherent 30–60-second stretches, high-frequency reviews after each, few quizzes, and fresh first-pass sample.");
+data.history.unshift("Nov 20 — CI partial/untimed. Family visit and shared meal, park, work, daycare, dinner, Sunday invitation, office report, store, café, neighbor and phone scenes. Independent correct: inviting Lola over; report still in progress. Replay-supported correct: calling rather than visiting Lola. Medicine answer ambiguous; no credit. User requested restart, slower pacing and meanings of common expressions. Transcript and English glosses available; no verified audio-only comprehension or 16-minute effective listening. No production exposure credit.");
+q("#date").textContent=data.date;
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+q("#history").innerHTML=lines(data.history);
