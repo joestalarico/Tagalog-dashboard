@@ -409,3 +409,17 @@ data.history.unshift("Nov 19 — CI partial/untimed: natural high-frequency fami
 q("#date").textContent=data.date;
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
 q("#history").innerHTML=lines(data.history);
+
+// November 20, 2026 — verified Living Tracker production consolidation mirror.
+data.date="November 20, 2026 · Grammar consolidation · Effective duration unverified";
+data.newWords=[];
+data.carryover=[["Focused vocabulary","PAUSED","Zero new focused items; exposure counts frozen"]];
+data.queue=[["Next production","Grammar consolidation only; resume focused vocabulary only on learner request"],["Timing","No 16-minute completion or protected seven-minute TALK credit without verification"]];
+data.grammar.unshift("Nov 20: Independently correct ng asawa ko + ang in binili/kukunin; actor-focus kami in umuwi/maglalakad/umalis; natural pa and na. Inconsistent kami/namin in actor-focus requests; future hahanapin incorrectly used for kahapon; noun agent improving in examples, not mastery. English prompts must be learner's next guest response, not staff dialogue.");
+data.history.unshift("Nov 20 — Production grammar consolidation, four phases attempted and extended practice; effective 16 minutes and seven uninterrupted TALK minutes unverified. Zero new focused vocabulary, exposure counters frozen. Independent binili ng asawa ko ang pagkain; kukunin ng asawa ko ang susi mamaya; pupunta kami ... kasama ang anak namin; nandito kami ... sa bahay pa ang asawa ko; umalis na kami kanina kasi gumagabi na. Gaps: uuwi namin, magpa-park namin, magdadala namin, future hahanapin with kahapon, para sa vs sa waiting, and semantic mixup maghihintay vs hahanapin. Coached repairs not counted as independent. Hotel TALK repeatedly interrupted and converted to learner-requested English response prompts; tutor confused staff vs learner prompts, prematurely ended repeatedly, and falsely attributed ASR speech that learner explicitly denied. Exclude fabricated transcript from assessment. No reliable percentage or mastery claim; next scenario NOT hotel, preserve requested English learner-response content and protected TALK.");
+q("#date").textContent=data.date;
+q("#new").innerHTML='<p class="muted">Grammar consolidation pause: zero new focused vocabulary; existing exposure counts frozen.</p>';
+q("#carry").innerHTML=lines(["Focused vocabulary paused — all historical exposure positions preserved"]);
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+q("#grammar").innerHTML=lines(data.grammar);
+q("#history").innerHTML=lines(data.history);
