@@ -432,3 +432,12 @@ data.history.unshift("Nov 20 — CI partial/untimed. Family visit and shared mea
 q("#date").textContent=data.date;
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
 q("#history").innerHTML=lines(data.history);
+
+
+// November 21, 2026 — Living Tracker CI mirror; unverified effective listening time.
+data.date="November 21, 2026 · CI conversational immersion · Effective duration unverified";
+data.listening.unshift("Nov 21 CI — Rotated market, family, office, Uber, hotel, restaurant, street, transport, relative call and childcare scenes. Correct gist/details: park destination, waiting before departure, later walk decision, friend free tomorrow afternoon, luggage placed in hotel room, quick restaurant order. Correctly noticed pickup speaker unnamed. Errors: all morning misread as later; cleaning after breakfast misread as chatting; office ride explanation inferred tiredness instead of not hungry. Visible transcript/gloss support available; fresh audio-only independent sample and 16 effective minutes unverified. Unahin and saging required explicit English meanings. Next: broader non-food scenarios, 30–60s connected passages, fewer interruptions, selective first-use glosses, brief high-frequency phrase recap after each passage.");
+data.history.unshift("Nov 21 — CI partial/untimed. Everyday conversational immersion across market, home, work, park, transport, relative call, Uber, hotel, restaurant and street conversation. Multiple correct short meaning answers but also timing/action misunderstandings; written transcript and glosses accessible, so no audio-only mastery claim. User requested broader scenario rotation beyond food, longer coherent stretches with far fewer stop/check questions, repeated natural high-frequency expressions to transfer to speaking, and English parenthetical glosses for unfamiliar words. Tutor repeatedly missed gloss requirement and over-interrupted. No verified 16-minute effective CI; no production vocabulary credit. Master Reference teaching addendum updated.");
+q("#date").textContent=data.date;
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+q("#history").innerHTML=lines(data.history);
