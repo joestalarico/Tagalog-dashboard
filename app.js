@@ -441,3 +441,19 @@ data.history.unshift("Nov 21 — CI partial/untimed. Everyday conversational imm
 q("#date").textContent=data.date;
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
 q("#history").innerHTML=lines(data.history);
+
+
+// November 22, 2026 — verified Google Docs handoff: vocabulary-led production resumed; timed lesson unverified.
+data.date="November 22, 2026 · Production vocabulary resumed · Effective lesson duration unverified";
+data.newWords=[["Next lesson","One genuinely new high-frequency focused item","1/3 pending verified completion"]];
+data.carryover=[["ayusin","fix / arrange","introduced Nov 7; encountered Nov 22; no new completed exposure credit"],["subukan","try","older encountered item"]];
+data.queue=[["Next production","One NEW focused word; three verified completed-lesson exposures"],["Current policy","Vocabulary pause lifted Nov 22; grammar integrated, not a gate"],["Exposure credit","No advancement for unverified duration"]];
+data.grammar.unshift("Nov 22: Vocabulary-led 4/3/7/2 resumed. Actor/object focus, ako/ko, kami/namin/amin, ang/ng/sa and verb aspects remain mixed-practice watchlist, not a grammar-perfection gate.");
+data.grammar.unshift("Nov 22 practice: independent successes in inayos ng asawa ko, aayusin namin, naghihintay ako, naghahanda pa kami and connected kasi/pero/kaya. Gaps: tumawag sa vs tinawagan ang, kami/tayo, sa amin vs sa kami, tinatawagan vs tatawagan, completed vs future. No verified mastery percentage.");
+data.history.unshift("Nov 22 — Production practice and method decision. Learner explicitly ended vocabulary pause; resume one new high-frequency word per lesson and integrated grammar under unchanged 4/3/7/2. Independent correct samples: Inayos ng asawa ko ang problema kahapon; Aayusin namin ang mga gamit mamaya; Inaayos ng asawa ko ang kwarto ngayon at naghihintay ako; Pagod na kami kanina pero ayos lang ngayon. Pronoun/marker/aspect gaps persisted in longer clauses; supported repetitions not independent. Ayusin previously introduced Nov 7, so NOT a new 1/3 completed-lesson credit. Seven-minute protected TALK and full 16-minute effective time unverified; no exposure advancement. Rotate non-hotel scenarios; provide English content for learner's reply while partner speaks Tagalog.");
+q("#date").textContent=data.date;
+q("#new").innerHTML=lines(["Next lesson: ONE genuinely new focused word (1/3 only after verified completion)"]);
+q("#carry").innerHTML=lines(["Vocabulary pause ended Nov 22; previous exposure counts preserved","ayusin previously introduced Nov 7; not new today"]);
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+q("#grammar").innerHTML=lines(data.grammar);
+q("#history").innerHTML=lines(data.history);
