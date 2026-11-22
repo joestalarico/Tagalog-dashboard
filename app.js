@@ -457,3 +457,12 @@ q("#carry").innerHTML=lines(["Vocabulary pause ended Nov 22; previous exposure c
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
 q("#grammar").innerHTML=lines(data.grammar);
 q("#history").innerHTML=lines(data.history);
+
+
+// November 22, 2026 — dedicated CI listening; authoritative Living Tracker readback verified.
+data.date="November 22, 2026 · CI everyday conversational listening · 16 effective minutes unverified";
+data.listening.unshift("Nov 22 CI — Office, Uber, school pickup, restaurant, family, friends, hotel, clinic, childcare and checkout queue. Correct: park with son and possible Mia meetup; restaurant waited; payment queue short/on left; clinic wait ~10 minutes. Missed clinic prior visit and reason for requesting quieter hotel room; some replies partial or attached to wrong scene. Replay and English phrase meanings requested (makasabay pauwi, may pasok pa bukas, katatapos lang, sasabay na ako sa iyo). Visible transcript and glosses accessible, so independent audio-only comprehension NOT verified. Learner reported only ~10 minutes at tutor's premature close; more listening followed, but 16 effective minutes NOT verified. Tutor over-interrupted and revealed an independent-sample answer. Next: broad scenarios, coherent 30–60s passages, concise 3–6 phrase English review after each, first-use visible glosses, fewer questions and no early endings. Production exposures unchanged.");
+data.history.unshift("Nov 22 — CI partial/effective duration unverified. High-frequency conversations across office, Uber, school, restaurant, family, street, hotel, clinic, childcare and shopping queue. Correct meaning: son/park/possible Mia meetup, restaurant waiting, checkout line short and left, clinic wait ten minutes. Incorrect/partial: clinic was NOT first visit; hotel different room requested due to child and elevator, not simply because room unready. English definitions/replays requested; transcript/gloss-supported, audio-only not established. User said only ~10 minutes at premature wrap; subsequent stretches did not verify full 16 effective minutes. Tutor gave answer to supposed independent sample and misread scene response. No mastery/completion claim or production counter change.");
+q("#date").textContent=data.date;
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+q("#history").innerHTML=lines(data.history);
