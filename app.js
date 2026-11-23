@@ -481,3 +481,12 @@ q("#carry").innerHTML=lines(["ayusin / subukan — older carryover","makipag-usa
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
 q("#grammar").innerHTML=lines(data.grammar);
 q("#history").innerHTML=lines(data.history);
+
+
+// November 23, 2026 — CI lesson evidence; Living Tracker write/readback verified.
+data.date="November 23, 2026 · CI conversational listening · Effective 16 minutes unverified";
+data.listening.unshift("Nov 23 CI — Office, Uber, childcare, street friends, hotel, family, appointments, shopping, transport and service encounters. Independent correct: hotel wanted room away from elevator for child and planned to eat; waiting coworker; tired friend due to work; third restaurant guest expected; short checkout queue; grocery pickup customer not rushed. Partial: park destination without wife's meeting reason, mall without direct-route detail, family call as checking hunger rather than eating properly, early travel arrival as waiting rather than avoiding rush. Fresh sample about wanting to go home missed the desire to leave; tutor incorrectly praised. Transcript/glosses available; audio-only unverified. Learner repeatedly requested longer 30–60s scenes and brief English translation of 3–6 high-frequency phrases after EVERY substantial passage; tutor repeatedly used tiny snippets, excessive questions and premature wrap attempts. Full 16 effective minutes not verified; production exposures unchanged.");
+data.history.unshift("Nov 23 — CI partial/untimed, broad everyday conversations across office, transport, school, family, hotel, friends, appointments, shopping and restaurant. Strong first-pass hotel-room explanation (far from elevator for son; eat while waiting), correct waiting coworker, gift purpose, short line, and third diner arriving. Some gist/detail misses: clinic/childcare questions, father checking eating vs hunger, travel waiting vs avoiding rush, desire to go home in supposed fresh sample. Tutor sometimes supplied answers, mismatched response to scene, stopped too often and repeatedly cut 30–60s stretches to tiny dialogues; learner explicitly demanded longer scenes and English high-frequency reviews after each. Visible text/gloss support; no verified audio-only sample, full effective 16 minutes, or mastery. Production makipag-usap exposure remains pending/unchanged.");
+q("#date").textContent=data.date;
+q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
+q("#history").innerHTML=lines(data.history);
