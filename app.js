@@ -466,3 +466,18 @@ data.history.unshift("Nov 22 — CI partial/effective duration unverified. High-
 q("#date").textContent=data.date;
 q("#ci-progress").innerHTML=lines(data.listening.slice(0,5));
 q("#history").innerHTML=lines(data.history);
+
+
+// November 23, 2026 — production v4: source of truth Google Living Tracker; effective timing unverified.
+data.date="November 23, 2026 · Production v4 · Four phases attempted; effective duration unverified";
+data.newWords=[["makipag-usap","talk / converse with","INTRODUCED Nov 23 · 1/3 completed-lesson credit pending"]];
+data.carryover=[["ayusin","fix / arrange","previously introduced; historical counts unchanged"],["subukan","try","older carryover"],["makipag-usap","talk with","recycle next lesson; pending verified exposure"]];
+data.queue=[["Next production","One genuinely new focused word; naturally recycle makipag-usap"],["Exposure credit","Nov 23 full effective 16 min and protected TALK not verified; counts unchanged"],["Method","English instructions and learner-response cues; Tagalog partner dialogue; protected 4/3/7/2"]];
+data.grammar.unshift("Nov 23 production: first attempt correctly used nakipag-usap/nakikipag-usap and makikipag-usap ako sa guro ... naghihintay pa kami. Longer replies needed sa/ang/ng, ako/ko, kami/amin and future vs ongoing; tutor missed Hindi kami nakipag-usap correction. Distinguish coached repetitions from independent output.");
+data.history.unshift("Nov 23 — Production v4, all four phases attempted; effective 16 minutes and seven protected reciprocal TALK minutes unverified despite tutor's approximate clock claims. Introduced makipag-usap (nakipag-usap / nakikipag-usap / makikipag-usap); pending 1/3 completed-lesson exposure, not credited. Independent accurate: Nakipag-usap ako sa kaibigan ko kanina (second clause needed sa rather than kasama sa); Makikipag-usap ako sa guro mamaya pero naghihintay pa kami ngayon. Office coworker TALK used English response cues, with coached constructions and errors in markers, pronouns, aspect and sentence completion. Recall: Hindi nakipag-usap kami (needs Hindi kami nakipag-usap), makikipag-usap ng asawa (needs ang), final multi-clause correct apart from extra atin after para sa amin. User repeatedly prevented early close and requested clock checks. No verified mastery, completion or counter advance; CI unchanged.");
+q("#date").textContent=data.date;
+q("#new").innerHTML=lines(["makipag-usap — talk with; introduced Nov 23; 1/3 completed exposure pending"]);
+q("#carry").innerHTML=lines(["ayusin / subukan — older carryover","makipag-usap — recycle naturally; no unverified completed-session credit"]);
+q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
+q("#grammar").innerHTML=lines(data.grammar);
+q("#history").innerHTML=lines(data.history);
