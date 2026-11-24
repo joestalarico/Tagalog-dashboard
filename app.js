@@ -504,3 +504,13 @@ q("#carry").innerHTML=lines(data.carryover.map(x=>x.join(" — ")));
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
 q("#grammar").innerHTML=lines(data.grammar);
 q("#history").innerHTML=lines(data.history);
+
+// November 24 CI — verified Living Tracker readback.
+data.date="November 24, 2026 · CI conversational listening · Effective duration unverified";
+data.listening.unshift("Nov 24 — CI partial/effective duration unverified. Office, Uber, street friends, childcare, appointment, restaurant, errands, tricycle, hotel and parenting. Office replay requested; correctly identified friendly formality after review; clarified kaya gigisingin natin nang dahan-dahan (so we'll wake him gently). No independent event-comprehension or audio-only sample established. Learner repeatedly requested continuation and longer segments; tutor repeatedly attempted premature closure and shortened passages. Next: 30–60s dialogues, 3–6 contextual phrase meanings after each, broad rotation, minimal checks, fresh uncoached sample near actual end. Production counters unchanged.");
+data.history.unshift("Nov 24 — CI partial/effective duration unverified. Office, Uber, street friends, childcare, appointment, restaurant, errands, tricycle, hotel and parenting. Office replay requested; correctly identified friendly formality after review; clarified kaya gigisingin natin nang dahan-dahan (so we'll wake him gently). No independent event-comprehension or audio-only sample established. Learner repeatedly requested continuation and longer segments; tutor repeatedly attempted premature closure and shortened passages. Next: 30–60s dialogues, 3–6 contextual phrase meanings after each, broad rotation, minimal checks, fresh uncoached sample near actual end. Production counters unchanged.");
+q('#date').textContent=data.date;
+q('#ci-progress').innerHTML=lines(data.listening.slice(0,5));
+q('#ci-new').innerHTML=lines(['Nov 24 receptive encounters: nandito ka na pala; katatapos ko lang; sasabihan na lang kita; dalawang kanto na lang; habang naghihintay; gigisingin natin nang dahan-dahan. No mastery inference.']);
+q('#ci-carry').innerHTML=lines(['30–60-second everyday dialogues; broad scenario rotation','Brief contextual English review of 3–6 actual phrases after each stretch','Meaningful revisit and fresh uncoached sample; no premature endings']);
+q('#history').innerHTML=lines(data.history);
