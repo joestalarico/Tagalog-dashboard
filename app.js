@@ -514,3 +514,13 @@ q('#ci-progress').innerHTML=lines(data.listening.slice(0,5));
 q('#ci-new').innerHTML=lines(['Nov 24 receptive encounters: nandito ka na pala; katatapos ko lang; sasabihan na lang kita; dalawang kanto na lang; habang naghihintay; gigisingin natin nang dahan-dahan. No mastery inference.']);
 q('#ci-carry').innerHTML=lines(['30–60-second everyday dialogues; broad scenario rotation','Brief contextual English review of 3–6 actual phrases after each stretch','Meaningful revisit and fresh uncoached sample; no premature endings']);
 q('#history').innerHTML=lines(data.history);
+
+// November 25 CI — verified Living Tracker mirror.
+data.date="November 25, 2026 · CI conversational listening · Effective duration unverified";
+data.listening.unshift("Nov 25 — CI partial/effective duration unverified. Neighbors, office, friends, parenting, clinic, hotel, errands, transport, restaurant, family and grocery coordination. First dialogue replay requested; English clarification of kailangan ko munang sunduin ang anak ko bandang alas-tres and kung mahaba ang pila, hatiin natin ang listahan. No independent comprehension or audio-only sample verified. Tutor repeatedly shortened passages and attempted closure despite requests to continue. Next: sustained 30–60s dialogues, brief contextual reviews, broad rotation, no premature endings, fresh uncoached sample. Production counters unchanged.");
+data.history.unshift("Nov 25 — CI partial/effective duration unverified. Neighbors, office, friends, parenting, clinic, hotel, errands, transport, restaurant, family and grocery coordination. First dialogue replay requested; English clarification of kailangan ko munang sunduin ang anak ko bandang alas-tres and kung mahaba ang pila, hatiin natin ang listahan. No independent comprehension or audio-only sample verified. Tutor repeatedly shortened passages and attempted closure despite requests to continue. Next: sustained 30–60s dialogues, brief contextual reviews, broad rotation, no premature endings, fresh uncoached sample. Production counters unchanged.");
+q('#date').textContent=data.date;
+q('#ci-progress').innerHTML=lines(data.listening.slice(0,5));
+q('#ci-new').innerHTML=lines(['Nov 25 encounters: karaniwan; sabagay; bandang alas-tres; kailangan ko munang sunduin; hatiin natin ang listahan; maghabol ng oras. No mastery inference.']);
+q('#ci-carry').innerHTML=lines(['Sustained 30–60-second everyday dialogues; broad rotation','3–6 actual contextual phrase meanings after each stretch','Meaningful revisit, fresh uncoached sample, no premature endings']);
+q('#history').innerHTML=lines(data.history);
