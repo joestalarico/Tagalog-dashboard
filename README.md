@@ -1,32 +1,29 @@
 # Salita — Tagalog Dashboard
 
-Mobile-friendly Phase 2 Tagalog progress dashboard.
-
 Website: https://joestalarico.github.io/Tagalog-dashboard/
 
-The Google Living Tracker remains the source of truth. The dashboard displays selected progress summaries, not detailed lesson histories.
+A read-only mirror of the [Google Living Tracker](https://docs.google.com/document/d/1RnLLGNy0IkP1udkCTiyYwQSprwTPfui4K0eIxFzD63g/edit). It is not an independent teaching authority or an automatic sync.
 
+## Structure (November 26, 2026 consolidation)
 
-## Required lesson closeout and publication verification (October 30, 2026)
+- `progress.json`: single current snapshot, active vocabulary, grammar, CI state and recent records.
+- `history.json`: older dashboard history, preserved without deleting prior entries.
+- `app.js`: display logic only. No lesson-specific overrides.
+- `index.html`: layout and styling.
 
-**Authoritative record:** [Google Living Tracker](https://docs.google.com/document/d/1RnLLGNy0IkP1udkCTiyYwQSprwTPfui4K0eIxFzD63g/edit). GitHub is a read-only dashboard mirror; it does not automatically sync from Google Docs.
+The authoritative complete historical record is privately archived in Google Drive, linked from the Living Tracker. Dashboard entries are selected summaries, not new mastery evidence.
 
-After every production or CI tutoring session, without waiting for a reminder:
+## Lesson closeout
 
-1. Write observed lesson evidence to the Living Tracker, distinguishing first-pass comprehension, support, processing ease, vocabulary encounters, and actual verified timing from inference or unknowns. Keep production and CI rotation independent.
-2. Reread the Tracker to verify the new entry.
-3. Update `app.js` history, listening/grammar summaries as relevant, the top-level `data.date`, **and the later `data.date = ...` override**. That later assignment previously caused a stale date despite new source data. Do not advance paused production counters during CI.
-4. Update `index.html` script URL query parameter (`app.js?v=...`) when `app.js` changes so browsers request the new script.
-5. Read back both GitHub files and confirm the current date, evidence, and script version.
-6. Check the GitHub Pages Actions run for the exact commit. Require **build success and deploy success** before reporting publication. A successful commit alone is insufficient. If possible verify the public page itself; otherwise explicitly report deployment success without claiming visual verification.
-7. Tell the learner succinctly what was verified and any pending/failed step. Never claim automatic background synchronization or fabricated completion.
+1. Write actual observed evidence to the Living Tracker; distinguish independent versus supported work and verified effective timing. Update current state in place. Preserve historic exposure positions, and keep CI separate.
+2. Reread and verify the Tracker.
+3. Update `progress.json` only for the current snapshot and new dated history entry. Keep approximately 8 recent records; when moving an older record to `history.json`, preserve its full text and verify combined history. Do not append JavaScript or duplicate state assignments. Update renderer/layout only when needed; data requests bypass browser cache.
+4. Verify JSON, expected current fields, preserved history and changed files; commit. Check exact commit's Pages build and deploy success and public display if possible; report anything unverified.
+5. No completion credit or advancement without verified evidence. No automatic background sync claims.
 
-This checklist is an instruction for the tutor during future lessons, **not** an automated scheduled sync or an automatic deployment monitor. If connector access is unavailable, the tutor must disclose that and not claim a successful sync.
+Current method: vocabulary consolidation pause (zero new items, frozen counters) until learner explicitly requests resumption. Then introduce one productive focus family at a time, with three verified completed-lesson exposures and delayed alternate-family introduction; use verb/pronoun chunks and spaced retrieval. Historical root-level counts remain intact.
 
-## Canonical teaching documents (November 5, 2026)
-
-- [Master Reference v3.7](https://docs.google.com/document/d/1MOyRVMFn72GXBAuu1O3LfTILDmimF82Uk784x8j-etE/edit): teaching method, production 4/3/7/2 and situational TALK, dedicated CI stories and situational listening.
-- [Curriculum v3.2](https://docs.google.com/document/d/1k0o_Lp2paVL9NcIcC1HdOA5KCWb5WRkbl54yqpbmNEg/edit): long-term goals.
-- [Living Tracker](https://docs.google.com/document/d/1RnLLGNy0IkP1udkCTiyYwQSprwTPfui4K0eIxFzD63g/edit): authoritative progress, completed-lesson counts, historical performance.
-
-Current production rotation: **ONE** new focused word per production lesson, **three consecutive verified completed-lesson exposures**, maximum **THREE** focused words at steady state. Preserve historical exposure positions and do not grant completion credit for unverified sessions. Older two-word/six-item and paused wording in archived history is historical, not current policy. GitHub Pages is a manually maintained read-only mirror, not an automatic sync.
+Canonical live documents:
+- [Master Reference v3.7](https://docs.google.com/document/d/1MOyRVMFn72GXBAuu1O3LfTILDmimF82Uk784x8j-etE/edit) — teaching method.
+- [Curriculum v3.2](https://docs.google.com/document/d/1k0o_Lp2paVL9NcIcC1HdOA5KCWb5WRkbl54yqpbmNEg/edit) — long-term goals.
+- [Living Tracker](https://docs.google.com/document/d/1RnLLGNy0IkP1udkCTiyYwQSprwTPfui4K0eIxFzD63g/edit) — current progress and historical archive link.
