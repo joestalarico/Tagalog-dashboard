@@ -552,3 +552,13 @@ q("#carry").innerHTML=lines(data.carryover.map(x=>x.join(" — ")));
 q("#queue").innerHTML=lines(data.queue.map(x=>x.join(" — ")));
 q("#grammar").innerHTML=lines(data.grammar);
 q("#history").innerHTML=lines(data.history);
+
+// November 26 CI — verified Living Tracker mirror.
+data.date="November 26, 2026 · CI conversational listening · Effective duration unverified";
+data.listening.unshift("Nov 26 — CI partial/effective duration unverified. Eight dialogues: office/charger, mall ride, school pickup, beach plans, clothing store, appointment, coworker onboarding and family gathering. First dialogue replay requested. No independent meaning response or audio-only sample verified. Learner three times requested spoken English translations after Tagalog phrases; later reviews improved, but onboarding review initially mismatched. Next: sustained dialogues, each actual phrase immediately followed by spoken English meaning, fresh uncoached sample. Production consolidation pause and counters unchanged.");
+data.history.unshift("Nov 26 — CI partial/effective duration unverified. Eight dialogues: office/charger, mall ride, school pickup, beach plans, clothing store, appointment, coworker onboarding and family gathering. First dialogue replay requested. No independent meaning response or audio-only sample verified. Learner three times requested spoken English translations after Tagalog phrases; later reviews improved, but onboarding review initially mismatched. Next: sustained dialogues, each actual phrase immediately followed by spoken English meaning, fresh uncoached sample. Production consolidation pause and counters unchanged.");
+q('#date').textContent=data.date;
+q('#ci-progress').innerHTML=lines(data.listening.slice(0,5));
+q('#ci-new').innerHTML=lines(['Nov 26 encounters: hiramin; ibabalik; dadaan muna kami; alas-tres daw; may plano yata; kung hindi kasya; diretso na kami diyan; magkikita-kita. No mastery inference.']);
+q('#ci-carry').innerHTML=lines(['Sustained 30–60-second everyday dialogues; broad rotation','Speak each actual Tagalog phrase immediately followed by English meaning','Meaningful revisit and fresh uncoached sample; no premature endings']);
+q('#history').innerHTML=lines(data.history);
